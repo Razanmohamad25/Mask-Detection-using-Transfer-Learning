@@ -27,28 +27,26 @@ Optimizer: Adam
 Loss function: Binary Cross-Entropy
 
 # Project Structure
-text
+```
 Mask-Detection-using-Transfer-Learning/
 │
-├── data/                # Training and validation datasets
-├── models/              # Saved trained models
-├── notebooks/           # Jupyter notebooks for EDA and experimentation
-├── utils/               # Preprocessing and augmentation utilities
-├── train.py             # Model training script
-├── evaluate.py          # Performance evaluation script
-├── predict.py           # Inference script for new images
-├── requirements.txt     # Dependencies
-├── README.md            # Project documentation
-data/: Contains with_mask/ and without_mask/ subfolders for separated class images
-
-notebooks/: For exploratory data analysis and visualization
-
-train.py, evaluate.py, predict.py: Scripts for running training, evaluation, and inference respectively
-
-Installation
-Clone this repository and install dependencies:
-
+├── data/
+│   ├── with_mask/
+│   └── without_mask/
+├── models/
+├── notebooks/
+├── utils/
+├── train.py
+├── evaluate.py
+├── predict.py
+├── requirements.txt
+├── README.md
+```
+- `data/`: Contains `with_mask/` and `without_mask/` subfolders for class images
+- `notebooks/`: For exploratory data analysis and visualization  
+- `train.py`, `evaluate.py`, `predict.py`: Scripts for running training, evaluation, and inference
 bash
+```
 git clone https://github.com/Razanmohamad25/Mask-Detection-using-Transfer-Learning.git
 cd Mask-Detection-using-Transfer-Learning
 pip install -r requirements.txt
@@ -63,7 +61,7 @@ Inference
 bash
 python predict.py --image path_to_image.jpg
 You can easily integrate the model with live video feeds or deploy it on edge devices for real-time mask detection.
-
+```
 # Results
 High accuracy on validation images
 
