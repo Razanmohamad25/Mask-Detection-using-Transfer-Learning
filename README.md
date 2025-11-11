@@ -60,8 +60,9 @@ python evaluate.py
 Inference
 bash
 python predict.py --image path_to_image.jpg
-You can easily integrate the model with live video feeds or deploy it on edge devices for real-time mask detection.
 ```
+You can easily integrate the model with live video feeds or deploy it on edge devices for real-time mask detection.
+
 # Results
 High accuracy on validation images
 
